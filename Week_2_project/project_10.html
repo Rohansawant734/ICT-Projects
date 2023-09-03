@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle Paragraph Visibility</title>
+    <link rel="stylesheet" href="project_10.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Toggle Paragraph Visibility</h1>
+        <button id="toggle-button">Toggle Paragraph</button>
+        <p id="hidden-paragraph">Hello Everyone!! This page has a hidden paragraph. Click the above button to toggle its visibility. See the magic of Web development!! Hope u enjoy the webpage</p>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById("toggle-button");
+        const hiddenParagraph = document.getElementById("hidden-paragraph");
+
+        toggleButton.addEventListener("click", function() {
+            if (hiddenParagraph.style.display === "none" || hiddenParagraph.style.display === "") {
+                hiddenParagraph.style.display = "block";
+            } else {
+                hiddenParagraph.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

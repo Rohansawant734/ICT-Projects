@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(lightgreen,#007BFF, #e96e6e);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 200vh;
+}
+
+#quote-container {
+    background:linear-gradient(to bottom, #555, #444);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#quote {
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}

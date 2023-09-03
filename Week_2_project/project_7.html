@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Quote Generator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="project_7.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Quote Generator</h1>
+        <button id="get-message-button">Get Message</button>
+        <div class="message"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#get-message-button").click(function() {
+                $.ajax({
+                    url: "https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?",
+                    dataType: "jsonp",
+                    success: function(data) {
+                        $(".message").html(data.quoteText);
+                    },
+                    error: function() {
+                        $(".message").html("Failed to fetch a quote. Please try again later.");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

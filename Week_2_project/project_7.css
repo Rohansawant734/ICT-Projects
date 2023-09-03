@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgb(218, 141, 214),#dac167, #e96e6e);;
+    text-align: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #dd4242;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 240px;
+}
+#get-message-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.message {
+    font-size: 1.2rem;
+    color: #f3eded;
+}
+h1{
+    color: white;
+}

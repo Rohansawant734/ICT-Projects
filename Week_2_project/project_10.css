@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#toggle-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#toggle-button:hover{
+    background-color:  #fff;
+      color: #007BFF;
+    border: 2px solid #007BFF;
+}
+#toggle-button:active{
+    box-shadow: inset -2px -2px 3px #d3d2ee,
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+#hidden-paragraph {
+    display: none;
+    font-size: 1.2rem;
+    color: #333;
+}
