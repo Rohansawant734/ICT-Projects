@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        }
+        .container{
+            height: 5vh;
+            background-color: black;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            
+        }
+        .box{
+        display: grid;
+        background-color: rebeccapurple;
+        height: 100vh;
+        grid-template-columns: auto auto auto;
+        grid-gap: 40px 40px;
+        justify-content: space-around;
+        /* align-items: center; */
+        align-content: center;
+        }
+        .item{
+        background-color: slateblue;
+        border: 4px solid yellow ;
+        width: 400px;
+        height: 300px;
+        }
+        .img1{
+        height:300px;
+        width: 400px;
+        }
+        .img2{
+        height:300px;
+        width: 400px;
+        }
+        .img3{
+        height:300px;
+        width: 400px;
+        }
+        figcaption{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+    </p>
+    </div>
+    <div class="box">
+        <div class="item"><figure>
+            <img class="img1" src="Kazuha_Wallpaper_1.jpg" alt="Wallpaper">
+            <figcaption>Kazuha from Genshin Impact</figcaption>
+        </figure>
+        </div>
+        <div class="item"><figure>
+            <img class="img2" src="Zhongli_Wallpaper_1.jpg" alt="Wallpaper">
+            <figcaption>Zhongli from Genshin Impact</figcaption>
+        </figure>
+        </div>
+        <div class="item"><figure>
+            <img class="img3" src="Scaramouche_Wallpaper_1.jpeg" alt="Wallpaper">
+            <figcaption>Wanderer from Genshin Impact</figcaption>
+        </figure>
+        </div>
+    </div>
+</body>
+</html>
